@@ -1,4 +1,4 @@
-export PATH=~/.config/zsh_plugins/fzf-zsh-plugin/bin:$PATH
+export PATH=~/.config/zsh_plugins/fzf-zsh-plugin/bin:/home/linuxbrew/.linuxbrew/bin:$PATH
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
@@ -12,3 +12,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # alias
 alias ll='ls -l'
+alias la='ls -la'
+setopt share_history
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
